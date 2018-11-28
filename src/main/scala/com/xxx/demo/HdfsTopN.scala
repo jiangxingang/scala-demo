@@ -14,8 +14,8 @@
   * ./bin/hdfs dfs -get output ./output     # 将 HDFS 上的 output 文件夹拷贝到本机
   * ./bin/hdfs dfs -rm -r output    # 删除 output 文件夹
   *
-  * 运行命令
-  * /usr/local/spark/bin/spark-submit --class "SimpleApp" ~/sparkapp/target/scala-2.11/simple-project_2.11-1.0.jar
+  * 第二：运行命令
+  * bin/spark-submit --class "com.xxx.demo.Break" test/demo-0.0.1-SNAPSHOT.jar
   * 上面命令执行后会输出太多信息，可以不使用上面命令，而使用下面命令查看想要的结果
   *
     18/11/27 14:07:49 DEBUG scheduler.DAGScheduler: After removal of stage 4, remaining stages = 1
