@@ -4,7 +4,7 @@
   * bin/hbase shell
   * bin/stop-hbase.sh
   *
-  * bin/spark-submit --class "com.xxx.demo.HBaseRead" test/demo-0.0.1-SNAPSHOT.jar
+  * bin/spark-submit --class "com.xxx.demo.HBaseReader" test/demo-0.0.1-SNAPSHOT.jar
   *
   * 不成功，怀疑版本问题。有知都请告诉我。
   */
@@ -22,7 +22,7 @@ import org.apache.spark.SparkConf
 
 import org.apache.hadoop.hbase.mapreduce
 
-object HBaseRead {
+object HBaseReader {
   def main(args: Array[String]) {
     val conf = HBaseConfiguration.create()
     val sc = new SparkContext(new SparkConf())
