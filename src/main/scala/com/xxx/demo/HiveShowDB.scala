@@ -20,6 +20,14 @@ object HiveShowDB {
 
     val spark = SparkSession.builder().enableHiveSupport().config(conf).getOrCreate()
     spark.sql("show databases").collect().foreach(println)
+
+    //测试选择数据库
+    spark.sql("use spark_hive")
+
+    //测试打印数据
+    val rdd = spark.sql("select * from teachers").collect()
+    println(rdd.toBuffer)
+
     spark.stop()
   }
 }
