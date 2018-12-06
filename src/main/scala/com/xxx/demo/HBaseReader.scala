@@ -1,8 +1,18 @@
 /**
   * hbase启动，停止
   * bin/start-hbase.sh
-  * bin/hbase shell
   * bin/stop-hbase.sh
+  *
+  * bin/hbase shell
+  * list
+  * disable 'student'
+  * drop 'student'
+  * create 'student','info'
+  * describe 'student' //查表信息
+  * put 'student','1','info:name','Xueqian'
+  * get 'student','1'
+  * scan 'student'
+  *
   *
   * bin/spark-submit --class "com.xxx.demo.HBaseReader" test/demo-0.0.1-SNAPSHOT.jar
   *

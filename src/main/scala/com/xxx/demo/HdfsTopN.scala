@@ -1,4 +1,6 @@
 /**
+  *
+  * ./start-all.sh
   * 第一：HDFS管理
   * 进到hadoop:
   * 启动

@@ -87,45 +87,22 @@
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-client</artifactId>
-            <version>0.98.2-hadoop2</version>
+            <version>1.1.5</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-common</artifactId>
-            <version>0.98.2-hadoop2</version>
+            <version>1.1.5</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-server</artifactId>
-            <version>0.98.2-hadoop2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.hbase</groupId>
-            <artifactId>hbase-protocol</artifactId>
-            <version>0.98.2-hadoop2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.hbase</groupId>
-            <artifactId>hbase-hadoop-compat</artifactId>
-            <version>0.98.2-hadoop2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.hbase</groupId>
-            <artifactId>hbase-hadoop2-compat</artifactId>
-            <version>0.98.2-hadoop2</version>
+            <version>1.1.5</version>
         </dependency>
 
     </dependencies>
-
-	<!--<build>-->
-		<!--<sourceDirectory>src/main/scala</sourceDirectory>-->
-		<!--<testSourceDirectory>src/test/scala</testSourceDirectory>-->
-	<!--</build>-->
 
     <build>
         <sourceDirectory>src/main/scala</sourceDirectory>
