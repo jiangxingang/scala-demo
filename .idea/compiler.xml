@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="demo" target="1.8" />
+      <module name="scala-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

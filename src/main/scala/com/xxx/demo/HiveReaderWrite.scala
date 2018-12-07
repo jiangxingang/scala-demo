@@ -31,6 +31,10 @@ object HiveReaderWrite {
     val conf = new SparkConf()
     conf.setAppName("TestHiveShowDB").setMaster("local")
 
+    //如果不加，创建的库在spark warehouse下
+    val warehouse = "/user/hive/warehouse"
+    conf.set("spark.sql.warehouse.dir", warehouse)
+
     val hiveSession = SparkSession.builder().enableHiveSupport().config(conf).getOrCreate()
 
     //step-1、在Hive中创建两张表

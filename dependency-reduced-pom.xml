@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.xxx</groupId>
   <artifactId>demo</artifactId>
-  <name>demo</name>
+  <name>scala-demo</name>
   <version>0.0.1-SNAPSHOT</version>
-  <description>Demo project for Spring Boot</description>
+  <description>Demo project for scala, hadoop, spark, hive, hbase</description>
   <inceptionYear>2017</inceptionYear>
   <build>
     <sourceDirectory>src/main/scala</sourceDirectory>
