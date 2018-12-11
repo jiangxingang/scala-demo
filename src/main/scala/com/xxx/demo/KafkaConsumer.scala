@@ -162,7 +162,8 @@ object KafkaConsumer {
 
     @transient
     val ssc = new StreamingContext(conf, Seconds(1))
-    ssc.checkpoint("/tmp")
+    ssc.checkpoint("file:///usr/local/checkpoint")
+    //ssc.checkpoint("/tmp")
 
     //创建topic
     var topic = Array("dblab");
