@@ -6,7 +6,7 @@
   * 启动
   * ./sbin/start-dfs.sh
   * 停止
-  *./sbin/stop-dfs.sh
+  * ./sbin/stop-dfs.sh
   *
   * ./bin/hdfs dfs -mkdir -p /user/hadoop
   * ./bin/hdfs dfs -mkdir input

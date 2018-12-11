@@ -22,7 +22,7 @@
 
 
 	<properties>
-		<!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spark.version>2.1.0</spark.version>
 		<scala.version>2.11</scala.version>
 		<hadoop.version>2.6.0</hadoop.version>
@@ -31,9 +31,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <encoding>UTF-8</encoding>
 
-        <!--<spark.version>2.1.1</spark.version>-->
-        <!--<scala.version>2.11.8</scala.version>-->
-        <!--<scala.compat.version>2.11</scala.compat.version>-->
     </properties>
 
 	<dependencies>
@@ -58,15 +55,32 @@
 			<artifactId>spark-streaming_${scala.version}</artifactId>
 			<version>${spark.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-client</artifactId>
-			<version>2.6.0</version>
-		</dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-core</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>${hadoop.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>${hadoop.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>${hadoop.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-streaming-kafka_${scala.version}</artifactId>
-            <version>1.6.3</version>
+			<artifactId>spark-streaming-kafka-0-10_${scala.version}</artifactId>
+            <version>2.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.spark</groupId>
